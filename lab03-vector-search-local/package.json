@@ -1,0 +1,20 @@
+{
+  "name": "lab03-vector-search-local",
+  "version": "1.0.0",
+  "description": "Lab 3 - MongoDB Vector Search e embeddings executados localmente",
+  "main": "src/test-connection.js",
+  "scripts": {
+    "test:connection": "node src/test-connection.js",
+    "test:embedding": "node src/test-embedding.js",
+    "seed": "node src/seed.js",
+    "index:create": "node src/create-vector-index.js",
+    "test:retriever": "node src/test-retriever.js"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.2.0",
+    "dotenv": "^17.4.2",
+    "mongodb": "^7.5.0"
+  }
+
+  
+}

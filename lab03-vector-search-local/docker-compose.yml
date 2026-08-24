@@ -1,0 +1,18 @@
+services:
+  mongodb:
+    image: mongodb/mongodb-atlas-local:8.0
+    container_name: mongodb-atlas-local
+    hostname: mongodb
+
+    ports:
+      - "27017:27017"
+
+    volumes:
+      - mongodb_data:/data/db
+      - mongodb_config:/data/configdb
+      - mongodb_mongot:/data/mongot
+
+volumes:
+  mongodb_data:
+  mongodb_config:
+  mongodb_mongot:
